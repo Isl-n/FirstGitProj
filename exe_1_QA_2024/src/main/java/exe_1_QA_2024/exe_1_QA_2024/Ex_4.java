@@ -28,7 +28,7 @@ public class Ex_4 {
 				  return "Error";
 		 
 		  case "reciprocals":
-			  if(1/a < 1/b)
+			  if((1/a) < (1/b))
 				  return "B";
 			  
 			  else if(1/a > 1/b)
