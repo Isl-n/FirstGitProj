@@ -28,21 +28,25 @@ public class Ex_4 {
 				  return "Error";
 		 
 		  case "reciprocals":
-			  if((1/a) < (1/b))
+			  
+			  if(a==0 || b==0 ) {
+				 return("Division by zero is not allowed");
+			  }
+			  
+			  else if((1/a) < (1/b))
 				  return "B";
 			  
-			  else if(1/a > 1/b)
-			    	return "A";
-			
 			  else
-				  return "Error";
-			  
-			  
+				  return "A";
+	
+			    
 		  default:
-			  return "None";
+			  throw new IllegalArgumentException("Invalid 	mode");
 
 		}
 
+		// assertEquals("Divide by zero gives infinity as result",
+		//true, Double.isInfinite(resultDiv));
 	}
 		
 }

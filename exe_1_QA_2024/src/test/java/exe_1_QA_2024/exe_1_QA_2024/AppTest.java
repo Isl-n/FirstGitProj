@@ -13,6 +13,7 @@ public class AppTest {
      * Rigorous Test :-)
      */
 	
+	
 	Ex_4 tester= new Ex_4();
 	
 	 @Test
@@ -27,7 +28,7 @@ public class AppTest {
 	 @Test
 	    public void Test_1_2() {
 	    	String ExpectedResult= "B";
-	    	float a= 1, b= 100;
+	    	float a= -1, b= 100;
 	    	String mode= "regulars";
 	    	String actualResult= tester.Compare(a, b, mode);
 	    	assertEquals(ExpectedResult,actualResult);
@@ -55,7 +56,7 @@ public class AppTest {
 	 @Test
 	    public void Test_2_2() {
 	    	String ExpectedResult= "A";
-	    	float a= 1, b= 22;
+	    	float a= -1, b= 22;
 	    	String mode= "negatives";
 	    	String actualResult= tester.Compare(a, b, mode);
 	    	assertEquals(ExpectedResult,actualResult);
@@ -81,8 +82,8 @@ public class AppTest {
  
 	 @Test
 	    public void Test_3_2() {
-	    	String ExpectedResult= "B";
-	    	float a=6, b=1;
+	    	String ExpectedResult= "A";
+	    	float a=-6, b=-1;
 	    	String mode= "reciprocals";
 	    	String actualResult= tester.Compare(a, b, mode);
 	    	assertEquals(ExpectedResult,actualResult);	
@@ -90,14 +91,11 @@ public class AppTest {
 	 
 	 @Test
 	    public void Test_3_3() {
-	    	String ExpectedResult= "Error";
+	    	String ExpectedResult= "Division by zero is not allowed";
 	    	float a=0, b=-9;
 	    	String mode= "reciprocals";
 	    	String actualResult= tester.Compare(a, b, mode);
 	    	assertEquals(ExpectedResult,actualResult);	
 	    }
-    
-    
-    
     
 }
